@@ -114,4 +114,3 @@ fi
 if bashio::config.exists 'dns.google_domains_zone'; then
     bashio::addon.option 'dns.google_domains_zone'
 fi
-#finish it

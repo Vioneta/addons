@@ -10,4 +10,3 @@ tempio \
     -template /usr/share/tempio/dnsmasq.config \
     -out "${CONFIG}"
 
-#finish it

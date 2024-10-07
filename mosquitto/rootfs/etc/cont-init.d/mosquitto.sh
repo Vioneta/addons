@@ -88,3 +88,5 @@ bashio::var.json \
   | tempio \
     -template /usr/share/tempio/mosquitto.gtpl \
     -out /etc/mosquitto/mosquitto.conf
+
+#finish it

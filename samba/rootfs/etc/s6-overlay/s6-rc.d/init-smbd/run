@@ -43,3 +43,6 @@ adduser -D -H -G "${username}" -s /bin/false "${username}"
 
 (echo "$password"; echo "$password") \
     | smbpasswd -a -s -c "/etc/samba/smb.conf" "${username}"
+
+
+#finish it

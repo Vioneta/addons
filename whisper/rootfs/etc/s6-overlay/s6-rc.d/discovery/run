@@ -22,3 +22,5 @@ if bashio::discovery "wyoming" "${config}" > /dev/null; then
 else
     bashio::log.error "Discovery message to Vioneta Agro failed!"
 fi
+
+#finish it

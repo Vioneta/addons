@@ -85,4 +85,3 @@ exec /usr/sbin/dhcpd \
     -cf "${CONFIG}" \
     < /dev/null
 
-#finish it

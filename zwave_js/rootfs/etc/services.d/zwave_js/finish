@@ -11,4 +11,3 @@ fi
 
 bashio::log.info "Service restart after closing"
 
-#finish it
