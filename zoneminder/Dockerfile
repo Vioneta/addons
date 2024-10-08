@@ -29,6 +29,29 @@ ENV S6_CMD_WAIT_FOR_SERVICES=1 \
     S6_SERVICES_GRACETIME=0
 
 
+RUN apt update \
+    && apt upgrade --assume-yes
+
+# Install pre-reqs
+RUN apt install --assume-yes --no-install-recommends gnupg
+
+# Configure Zoneminder PPA
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABE4C7F993453843F0AEB8154D0BF748776FFB04 \
+    && echo deb http://ppa.launchpad.net/iconnor/zoneminder-1.36/ubuntu focal main > /etc/apt/sources.list.d/zoneminder.list \
+    && apt update
+
+# Install zoneminder
+RUN DEBIAN_FRONTEND=noninteractive apt install --assume-yes zoneminder \
+    && a2enmod rewrite \
+    && a2enconf zoneminder \
+    && systemctl restart apache2 \
+    && systemctl enable zoneminder \
+    && systemctl stop zoneminder
+
+
+
+
+
 # Change config location
 # hadolint ignore=DL4006
 RUN sed -i 's|/etc/zm.conf|/config/addons_config/zoneminder/zm.conf|g' /usr/local/bin/entrypoint.sh \
@@ -72,6 +95,7 @@ RUN chmod 744 /ha_autoapps.sh && /ha_autoapps.sh "$PACKAGES" && rm /ha_autoapps.
 ENV S6_STAGE2_HOOK=/ha_entrypoint.sh
 ADD "https://raw.githubusercontent.com/Vioneta/addons/master/.templates/ha_entrypoint.sh" "/ha_entrypoint.sh"
 
+RUN systemctl start zoneminder
 # Entrypoint modifications
 ADD "https://raw.githubusercontent.com/Vioneta/addons/master/.templates/ha_entrypoint_modif.sh" "/ha_entrypoint_modif.sh"
 RUN chmod 777 /ha_entrypoint.sh /ha_entrypoint_modif.sh && /ha_entrypoint_modif.sh && rm /ha_entrypoint_modif.sh
