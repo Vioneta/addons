@@ -25,3 +25,5 @@ echo "DROP EXTENSION IF EXISTS vectors;
 
 # Enable vectors
 psql "postgres://$DB_USERNAME:$DB_PASSWORD@$DB_HOSTNAME:$DB_PORT" < setup_postgres.sql || true
+
+#hi

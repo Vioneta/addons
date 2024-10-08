@@ -23,3 +23,5 @@ elif [[ "${exit_code_service}" -ne 0 ]]; then
   fi
   exec /run/s6/basedir/bin/halt
 fi
+
+#hi

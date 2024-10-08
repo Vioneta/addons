@@ -31,3 +31,4 @@ homeassistant: 2023.8.0.dev20230728
 image:
 - vioneta/{arch}-addon-whisper
 - ghcr.io/vioneta/{arch}-addon-whisper
+#hi

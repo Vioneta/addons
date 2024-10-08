@@ -38,3 +38,4 @@ homeassistant: 2023.8.0.dev20230718
 image:
 - vioneta/{arch}-addon-piper
 - ghcr.io/vioneta/{arch}-addon-piper
+#hi
