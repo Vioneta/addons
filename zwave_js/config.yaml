@@ -13,9 +13,7 @@ discovery:
 - zwave_js
 hassio_api: true
 homeassistant: 2021.2.0b0
-image:
-- vioneta/{arch}-addon-zwave_js
-- ghcr.io/vioneta/{arch}-addon-zwave_js
+image: vioneta/{arch}-addon-zwave_js
 init: false
 map:
 - addon_config:rw

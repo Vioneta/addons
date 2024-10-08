@@ -10,9 +10,7 @@ arch:
 - aarch64
 - amd64
 - i386
-image:
-- vioneta/{arch}-addon-dnsmasq
-- ghcr.io/vioneta/{arch}-addon-dnsmasq
+image: vioneta/{arch}-addon-dnsmasq
 init: false
 options:
   defaults:

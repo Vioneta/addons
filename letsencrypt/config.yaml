@@ -10,9 +10,7 @@ arch:
 - amd64
 - i386
 boot: manual
-image:
-- vioneta/{arch}-addon-letsencrypt
-- ghcr.io/vioneta/{arch}-addon-letsencrypt
+image: vioneta/{arch}-addon-letsencrypt
 init: false
 map:
 - ssl:rw

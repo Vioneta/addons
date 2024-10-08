@@ -12,9 +12,7 @@ arch:
 - i386
 hassio_api: true
 host_network: true
-image:
-- vioneta/{arch}-addon-samba
-- ghcr.io/vioneta/{arch}-addon-samba
+image: vioneta/{arch}-addon-samba
 init: false
 map:
 - addons:rw
