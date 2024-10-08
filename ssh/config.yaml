@@ -15,7 +15,9 @@ audio: true
 hassio_api: true
 hassio_role: manager
 host_dbus: true
-image: vioneta/{arch}-addon-ssh
+image:
+- vioneta/{arch}-addon-ssh
+- ghcr.io/vioneta/{arch}-addon-ssh
 ingress: true
 init: false
 map:

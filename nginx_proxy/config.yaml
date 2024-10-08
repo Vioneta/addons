@@ -10,7 +10,9 @@ arch:
 - aarch64
 - amd64
 - i386
-image: vioneta/{arch}-addon-nginx_proxy
+image:
+- vioneta/{arch}-addon-nginx_proxy
+- ghcr.io/vioneta/{arch}-addon-nginx_proxy
 init: false
 map:
 - ssl

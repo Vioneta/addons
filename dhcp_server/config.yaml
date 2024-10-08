@@ -12,7 +12,9 @@ arch:
 - amd64
 - i386
 host_network: true
-image: vioneta/{arch}-addon-dhcp_server
+image:
+- vioneta/{arch}-addon-dhcp_server
+- ghcr.io/vioneta/{arch}-addon-dhcp_server
 options:
   default_lease: 86400
   dns:

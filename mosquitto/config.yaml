@@ -13,7 +13,9 @@ arch:
 auth_api: true
 discovery:
 - mqtt
-image: vioneta/{arch}-addon-mosquitto
+image:
+- vioneta/{arch}-addon-mosquitto
+- ghcr.io/vioneta/{arch}-addon-mosquitto
 map:
 - ssl
 - share

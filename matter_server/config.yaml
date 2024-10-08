@@ -15,7 +15,9 @@ homeassistant: 2024.6.0
 host_ipc: false
 host_network: true
 host_dbus: true
-image: vioneta/{arch}-addon-matter-server
+image:
+- vioneta/{arch}-addon-matter-server
+- ghcr.io/vioneta/{arch}-addon-matter-server
 ingress: true
 ingress_port: 5580
 init: false

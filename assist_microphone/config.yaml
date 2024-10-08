@@ -32,4 +32,6 @@ schema:
   debug_logging: bool
 audio: true
 homeassistant: 2023.12.1
-image: vioneta/{arch}-addon-assist_microphone
+image:
+- vioneta/{arch}-addon-assist_microphone
+- ghcr.io/vioneta/{arch}-addon-assist_microphone

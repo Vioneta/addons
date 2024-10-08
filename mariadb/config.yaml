@@ -11,7 +11,9 @@ arch:
 - i386
 backup_post: unlock-tables-for-backup
 backup_pre: lock-tables-for-backup
-image: vioneta/{arch}-addon-mariadb
+image:
+- vioneta/{arch}-addon-mariadb
+- ghcr.io/vioneta/{arch}-addon-mariadb
 init: false
 options:
   databases:
