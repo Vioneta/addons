@@ -61,7 +61,7 @@ devices:
 - "/dev/nvme0"
 - "/dev/nvme1"
 - "/dev/nvme2"
-image: ghcr.io/alexbelgium/code_server-{arch}
+image: vioneta/code_server-{arch}
 init: false
 map:
 - backup:rw
