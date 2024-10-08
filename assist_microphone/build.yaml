@@ -6,3 +6,4 @@ build_from:
 #   base_image: notary@home-assistant.io
 args:
   WYOMING_SATELLITE_VERSION: 1.2.0
+#hi

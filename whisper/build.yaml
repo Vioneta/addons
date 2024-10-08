@@ -3,3 +3,4 @@ build_from:
   aarch64: ghcr.io/home-assistant/aarch64-base-debian:bullseye
 args:
   WYOMING_WHISPER_VERSION: 2.1.0
+#hi

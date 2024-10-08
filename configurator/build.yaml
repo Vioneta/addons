@@ -9,3 +9,4 @@ build_from:
 #   base_image: notary@home-assistant.io
 args:
   CONFIGURATOR_VERSION: 0.5.2
+#hi
