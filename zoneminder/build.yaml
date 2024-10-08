@@ -1,0 +1,5 @@
+build_from:
+  amd64: tritruongtr/zoneminder
+  aarch64: tritruongtr/zoneminder
+args:
+  BUILD_VERSION: 1.36.34

@@ -16,8 +16,8 @@
 
 ARG BUILD_FROM
 ARG BUILD_VERSION
-ARG BUILD_UPSTREAM="1.36.34"
-FROM tritruongtr/zoneminder:latest
+# ARG BUILD_UPSTREAM
+FROM ${BUILD_FROM}
 
 ##################
 # 2 Modify Image #
