@@ -161,8 +161,8 @@ module.exports = {
   // added to the end of the palette.
   // If not set, the following default order is used:
   paletteCategories: [
-    "home_assistant",
-    "home_assistant entities",
+    "vioneta_agro",
+    "vioneta_agro entities",
     "subflows",
     "common",
     "function",
@@ -184,10 +184,23 @@ module.exports = {
   },
 
   // Customising the editor
+  // Customising the editor
   editorTheme: {
-    projects: {
-      // To enable the Projects feature, set this value to true
-      enabled: false,
+    page: {
+      title: "VFlow",
+      favicon: "./favicon.ico",
+      // css: "/absolute/path/to/custom/css/file",
+      // scripts: ["/absolute/path/to/custom/script/file", "/another/script/file"],
+    },
+    header: {
+      title: "VFlow",
+      image: "./logo.png", // or null to remove image
+      url: "http://www.vioneta.com", // optional url to make the header text/image a link to this url
+    },
+    deployButton: {
+      type: "simple",
+      label: "run",
+      icon: "./run.png", // or null to remove image
     },
   },
 };
