@@ -55,4 +55,4 @@ EXPOSE 8088
 # Use the entrypoint script as the CMD
 CMD ["/usr/local/bin/entrypoint.sh"]
 
-
+#hellow
