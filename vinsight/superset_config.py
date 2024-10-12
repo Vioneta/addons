@@ -19,7 +19,7 @@ EXPLORE_FORM_DATA_CACHE_CONFIG = {
     **CACHE_CONFIG,
     "CACHE_KEY_PREFIX": "vinsight_explore_form_",
 }
-# SECRET_KEY = "fQUWpWhUVj6HPeSzXNeETPL4IabOk3lZgRdsrj7BG8ndT5ao+4bP5fQ3"
+SECRET_KEY = "fQUWpWhUVj6HPeSzXNeETPL4IabOk3lZgRdsrj7BG8ndT5ao+4bP5fQ3"
 # SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://postgres:postgres@127.0.0.1:5432/superset"
 # SQLALCHEMY_TRACK_MODIFICATIONS = True
 # Flask-WTF flag for CSRF
