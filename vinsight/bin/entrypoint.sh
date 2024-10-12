@@ -5,6 +5,7 @@ set -e
 # echo "host all  all    127.0.0.1/32  trust" >> /etc/postgresql/15/main/pg_hba.conf
 # service postgresql start
 service redis-server start
+superset-init
 # /usr/local/bin/wait-for-postgres.sh
 # Configure PostgreSQL: Set password and create database if it doesn't exist
 # su - postgres -c 'psql -c "ALTER USER postgres PASSWORD '\''postgres'\'';"'
