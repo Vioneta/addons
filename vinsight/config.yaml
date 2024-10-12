@@ -1,5 +1,5 @@
 name: "Vinsight with PostgreSQL and Redis"
-version: "1.0"
+version: "1.1"
 slug: vinsight_addon
 description: "Vinsight bundled with PostgreSQL and Redis for analytics."
 arch:
