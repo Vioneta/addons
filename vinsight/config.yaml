@@ -1,0 +1,33 @@
+name: "Vinsight with PostgreSQL and Redis"
+version: "1.0"
+slug: vinsight_addon
+description: "Vinsight bundled with PostgreSQL and Redis for analytics."
+arch:
+- amd64
+- aarch64
+startup: services
+boot: auto
+options: {}
+schema: {}
+
+ports:
+  80/tcp: 8088
+
+ingress: true
+ingress_port: 80
+panel_icon: "mdi:chart-bar"
+panel_title: "Vinsight Analytics"
+panel_admin: true
+image: "vioneta/vinsight_addon"
+host_network: false
+
+map: ["share"]
+
+environment:
+  POSTGRES_DB: "superset"
+  POSTGRES_USER: "postgres"
+  POSTGRES_PASSWORD: "postgres"
+
+privileged: ["NET_ADMIN"]
+
+webui: "http://[HOST]:[PORT:80]"

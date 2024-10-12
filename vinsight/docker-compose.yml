@@ -1,0 +1,17 @@
+version: "3"
+services:
+  vinsight:
+    image: vioneta/vinsight:latest
+    restart: always
+    #command: bash -c "flask fab create-admin --username vinsight  --firstname vinsight  --lastname Admin  --email admin@vioneta.com  --password admin"
+    # command: superset-demo
+    # environment:
+    # MAPBOX_API_KEY: ${MAPBOX_API_KEY}
+    # SUPERSET_HOME: /etc/superset
+    ports:
+      - "8088:8088"
+    volumes:
+      # - ./superset_config.py:/etc/superset/superset_config.py
+      - vinsight:/var/lib/superset
+volumes:
+  vinsight:
