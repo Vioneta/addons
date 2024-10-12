@@ -1,7 +1,7 @@
 version: "3"
 services:
   vinsight:
-    image: vioneta/vinsight:latest
+    image: vioneta/aarch64-addon-vinsight:latest
     restart: always
     #command: bash -c "flask fab create-admin --username vinsight  --firstname vinsight  --lastname Admin  --email admin@vioneta.com  --password admin"
     # command: superset-demo
