@@ -18,7 +18,7 @@ ingress_port: 80
 panel_icon: "mdi:chart-bar"
 panel_title: "Vinsight Analytics"
 panel_admin: true
-image: "vioneta/vinsight_addon"
+image: "vioneta/{arch}-addon-vinsight"
 host_network: false
 
 map: ["share"]

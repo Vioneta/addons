@@ -61,7 +61,7 @@ devices:
 - "/dev/nvme0"
 - "/dev/nvme1"
 - "/dev/nvme2"
-image: vioneta/code_server-{arch}
+image: vioneta/{arch}-addon-code_server
 init: false
 map:
 - backup:rw

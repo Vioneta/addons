@@ -8,7 +8,7 @@ description: An agent used to manage all the resources in a Swarm cluster
 docker_api: true
 full_access: true
 hassio_api: true
-image: vioneta/portainer_agent-{arch}
+image: vioneta/{arch}-addon-portainer_agent
 init: false
 map:
 - config:rw
